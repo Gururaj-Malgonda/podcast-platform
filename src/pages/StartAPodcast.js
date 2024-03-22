@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/common/Header/Header";
+import PodcastForm from "../components/StartAPodcast/PodcastForm";
 
 function StartAPodcast() {
   return (
     <div>
       <Header />
-      <h1 style={{ textAlign: "center" }}>Inside Start A Podcasts</h1>
+      <div className="input-wrapper">
+        <h1 style={{ textAlign: "center" }}>Create new Podcast</h1>
+        <PodcastForm />
+      </div>
     </div>
   );
 }
