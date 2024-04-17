@@ -12,7 +12,9 @@ import { auth, db } from "./firebase";
 import { setUser } from "./slices/userSlice";
 import { doc, onSnapshot } from "firebase/firestore";
 import { useEffect } from "react";
-import { onAuthStateChanged } from "firebase/auth"; 
+import { onAuthStateChanged } from "firebase/auth";
+import PodcastsDetatils from "./pages/PodcastsDetatils";
+import CreateAnEpisode from "./pages/CreateAnEpisode";
 
 function App() {
   const dispatch = useDispatch();
@@ -62,6 +64,11 @@ function App() {
             <Route path="/podcasts" element={<Podcasts />}></Route>
             <Route path="/start-a-podcast" element={<StartAPodcast />}></Route>
             <Route path="/profile" element={<Profile />}></Route>
+            <Route path="/podcast/:id" element={<PodcastsDetatils />}></Route>
+            <Route
+              path="/podcast/:id/create-episode"
+              element={<CreateAnEpisode />}
+            ></Route>
           </Route>
         </Routes>
       </BrowserRouter>

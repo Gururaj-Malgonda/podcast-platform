@@ -58,3 +58,25 @@ input {
 a {
   text-decoration: none;
 }
+.banner-wrapper {
+  border-radius: 1rem;
+  background: linear-gradient(
+    177.7deg,
+    rgba(58, 129, 191, 0.3) 1.63%,
+    rgba(65, 48, 90, 0.009) 148.18%
+  );
+  /* background-position: center; */
+  /* width: "100%"; */
+  display: flex;
+  /* margin-top: 0.5rem; */
+}
+.banner-wrapper > img {
+  padding: 0.4rem;
+  border-radius: 1rem;
+  width: 100%;
+  align-self: center;
+}
+.podcast-description {
+  text-align: left !important;
+  color: var(--purple-grey);
+}
